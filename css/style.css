@@ -1,0 +1,402 @@
+/* BASE */
+
+*{
+  font-family: 'Roboto', sans-serif;
+  
+}
+body.noscroll{
+  overflow: hidden;
+}
+.nav-items a {
+  font-size: 0.68rem;
+}
+a {
+  text-decoration: none;
+  color:#000000; 
+}
+a:hover,.header-logo img:hover,.nav-item1 img:hover{
+  opacity: .7;
+  cursor: pointer;
+  transition: .3s;
+
+}
+.flex{
+  max-width: 360px;
+
+}
+.flex-title p {
+  font-size: 1rem;
+}
+
+/* //BASE */
+
+/* header */
+.header-wrapper {
+  padding: 48px 15px 44px;
+}
+.header-item {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-items {
+  display: flex;
+}
+.nav-items li {
+  list-style: none;
+  border-left: 1px solid #999999;
+}
+.nav-items a {
+  padding: 0 21px;
+  
+}
+.nav-top {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ハンバーガーメニュー */
+.hum-btn{
+  width: 40px;
+  height: 40px;
+  display: none;
+  position: relative;
+}
+.hum-btn:hover {
+  transition: .3s;
+  opacity: .7;
+  cursor: pointer;
+}
+.bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 20px;
+  height: 1px;
+  background-color: #000000;
+}
+.bar-top {
+  top:35%;
+}
+.bar-mid{
+  top: 50%;
+}
+.bar-bottom {
+  top: 65%;
+}
+
+.hum-btn.close .bar-top{
+  transition: .3s;
+  transform: translateY(5px) rotate(45deg);
+  
+}
+.hum-btn.close .bar-mid{
+  opacity: 0;
+  transition: .3s;
+}
+.hum-btn.close .bar-bottom{
+  transition: .3s;
+  transform: translateY(-7px) rotate(135deg);
+
+}
+
+
+/* //ハンバーガーメニュー */
+
+/*// header */
+
+/* fv */
+
+.fv-wrapper {
+  background-image: url(../img/food-photographer-jennifer-pallian-DfbrRpHTLy0-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+.fv-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+
+/*// fv */
+
+/* section */
+
+.section-wrapper {
+  padding: 12px 15px 0;
+}
+.section-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 15px 30px;
+}
+.flex-title {
+  text-align: center;
+  padding: 18px  0 22px;
+  border-bottom: #000000 1px solid;
+  margin-bottom: 18px;
+}
+.flex-img {
+  max-width: 360px;
+}
+.flex-img img {
+  width: 100%;
+}
+.flex-date {
+  margin-bottom: 60px;
+  border-bottom: 1px solid #CCCCCC;
+} 
+.flex-date:hover {
+  opacity: .7;
+  transition: .3s;
+  cursor: pointer;
+}
+  .flex-date p,.flex-text p,.flex-text2 p {
+    line-height:24px;
+    font-size: 0.75rem;
+}
+.span {
+  font-size: 0.5rem;
+  margin-right: 10px;
+
+}
+.flex-text {
+  margin-bottom: 34px;
+}
+.flex-text2 {
+  margin-bottom: 10px;
+}
+.img-bottom {
+  margin-top: 10px;
+  border: 1px solid #000000;
+  text-align: center;
+}
+.img-bottom a {
+  line-height: 24px;
+}
+
+
+
+/*// section */
+
+/* navigation */
+
+.nav-wrapper {
+  padding: 32px 15px 0;
+}
+.nav-container {
+  padding:23px 15px 13px ;
+}
+.nav-flex {
+  border-top: 1px solid #000000;
+  border-bottom:1px solid #000000;
+  padding: 27px 0 30px;
+
+  display: flex;
+  line-height: 27px;
+}
+.nav-list1 {
+  margin-right: 197px;
+}
+.nav-list2 {
+  margin-right: 88px;
+}
+.nav-list3 {
+  margin-right: 109px;
+}
+.nav-list4 {
+  margin-right: 137px;
+}
+.nav-item a {
+  font-size: 0.68rem;
+}
+.link-title {
+  font-size: 0.625rem;
+}
+
+
+
+/* //navigation */
+
+/* footer */
+.footer {
+  padding:0 30px 20px;
+  text-align: right;
+}
+.footer-icon {
+  font-size: 0.4rem;
+  display: none;
+}
+.facebook,.instagram {
+  margin-right: 30px;
+  
+}
+.facebook:hover,.instagram:hover {
+  transition: .3s;
+  opacity: .7;
+  cursor: pointer;
+}
+small {
+  font-size: 0.4rem;
+}
+
+
+/* //footer */
+
+
+
+/* スマホ表示 */
+@media(max-width :768px){
+
+
+
+/* header */
+
+
+.header-wrapper {
+  padding:20px 15px 20px;
+}
+
+.header-item {
+  align-items: center;
+}
+.header-logo img{
+  
+  max-width: 50%;
+  vertical-align: middle;
+  
+}
+.header-nav {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.nav-items {
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width: 100%;
+ 
+}
+.nav-items li {
+  border-left: none;
+}
+.nav-top {
+  margin-top: 30px;
+}
+
+.nav-items a {
+  font-size: 1rem;
+  text-align: center;
+
+
+}
+/* //header */
+
+
+/* ハンバーガーメニュー */
+
+.hum-btn {
+  display: block;
+  z-index: 3;
+}
+
+/* //ハンバーガーメニュー */
+
+
+/* section */
+
+.section-flex {
+  flex-direction: column;
+  
+}
+.flex {
+  width: 100%;
+  margin: 0 auto;
+}
+.img-bottom {
+  margin-top:30px; 
+}
+
+/* //section */
+
+/* navigation */
+
+.nav-container {
+  padding-top: 0;
+}
+
+.nav-flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.nav-list1 {
+  margin-right: 0px;
+  margin: 0 auto;
+}
+.nav-list2 {
+  margin-right: 0px;
+  display: none;
+}
+.nav-list3 {
+  margin-right: 0px;
+  display: none;
+}
+.nav-list4 {
+  margin-right: 0px;
+  display: none;
+}
+.nav-list5 {
+  display: none;
+}
+
+.nav-item a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.nav-item img {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+/* //navigation */
+
+
+/* footer */
+.footer {
+  text-align: center;
+}
+
+.footer-icon {
+  display: block;
+  margin-bottom: 20px;
+}
+
+}
